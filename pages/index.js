@@ -4,8 +4,11 @@ import ThreeCanvas from "../components/ThreeCanvas";
 export default function Home() {
   return (
     <div className="static">
-      <ThreeCanvas style={{position:"absolute",top:0,left:0}}/>
-      <h1 className="text-2xl ">King Joker</h1>
+      <ThreeCanvas />
+      <div className="flex flex-col justify-center items-center h-screen">
+        <h1 className="text-2xl text-white">King Joker</h1>
+        <h1 className="text-lg">Full-stack Developer</h1>
+      </div>
     </div>
   );
 }
