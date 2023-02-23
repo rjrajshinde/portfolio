@@ -5,7 +5,7 @@ const MenuIcon = function MenuIcon({ openDropDown }) {
   return (
     <>
       <div
-        class={
+        className={
           `${styles.menuIconContainer} ` +
           `${openDropDown && `${styles.active}`}`
         }

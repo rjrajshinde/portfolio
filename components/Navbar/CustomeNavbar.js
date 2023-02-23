@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import MenuIcon from "./MenuIcon";
 import styles from "./styles/CustomeNavbar.module.css";
+import Lottie from "react-lottie";
+import home from "./home2.json";
+
+const defaultOptions = {
+  loop: false,
+  autoplay: true,
+};
 
 function CustomeNavbar() {
   const [openDropDown, setOpenDropDown] = useState(false);
@@ -21,7 +28,7 @@ function CustomeNavbar() {
         <div
           id="dropdownDivider"
           className={
-            `z-10 bg-white divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 absolute  ` +
+            `z-10 bg-white divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600 absolute  ` +
             `${!openDropDown && "hidden"} ` +
             `${styles.dropdownDivider}`
           }
@@ -33,15 +40,21 @@ function CustomeNavbar() {
             <li className="">
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
               >
+                <Lottie
+                  animationData={home}
+                  height={100}
+                  width={100}
+                  options={defaultOptions}
+                />
                 Home
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Projects
               </a>
@@ -49,20 +62,28 @@ function CustomeNavbar() {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Skills
               </a>
             </li>
+            <li>
+              <a
+                href="#"
+                className="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                About Me
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Contact
+              </a>
+            </li>
           </ul>
-          <div className="py-2">
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-            >
-              About Me
-            </a>
-          </div>
         </div>
       </div>
     </>
