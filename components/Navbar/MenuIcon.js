@@ -17,7 +17,7 @@ const MenuIcon = function MenuIcon({ openDropDown }) {
           viewBox="0 0 200 200"
           className={styles.svg}
         >
-          <g stroke-width="6.5" stroke-linecap="round">
+          <g strokeWidth="6.5" stroke-linecap="round">
             <path
               d="M72 82.286h28.75"
               fill="#009100"
