@@ -8,7 +8,9 @@ function ThreeCanvas() {
       <Canvas className="">
         <OrbitControls />
         <ambientLight intensity={0.5} />
-        <directionalLight position={[-2, 5, 2]} intensity={1} />
+        <directionalLight position={[-2, 5, 2]} intensity={0.7} />
+        <directionalLight position={[1, -10, 7]} intensity={1} color={"#000"} />
+
         <Geometry />
       </Canvas>
     </div>
