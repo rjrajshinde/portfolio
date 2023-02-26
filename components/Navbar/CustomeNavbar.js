@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import MenuIcon from "./MenuIcon";
 import styles from "./styles/CustomeNavbar.module.css";
-import Lottie from "react-lottie";
 import home from "./home2.json";
 
 const defaultOptions = {
@@ -42,12 +41,6 @@ function CustomeNavbar() {
                 href="#"
                 className="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
               >
-                <Lottie
-                  animationData={home}
-                  height={100}
-                  width={100}
-                  options={defaultOptions}
-                />
                 Home
               </a>
             </li>

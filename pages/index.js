@@ -1,14 +1,10 @@
-import Head from "next/head";
 import CustomeNavbar from "../components/Navbar/CustomeNavbar";
 import ThreeCanvas from "../components/ThreeCanvas";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-      </Head>
-      <div className="static">
+      <div className="static bg-transparent">
         <CustomeNavbar />
         <ThreeCanvas />
         <div className="flex flex-col justify-center items-center ">
